@@ -7,7 +7,8 @@ import PlaygroundSupport
  
  Your goal is to precisely reproduce this image:
  
- ![subhumans](Subhumans.png "Subhumans")
+ ![subhumans-no-grid](subhumans-no-grid.png "Subhumans")
+ ![subhumans-with-grid](subhumans-with-grid.png "Subhumans")
  
  By precisely reproducing this image, you will demonstrate your understanding of:
  
@@ -18,15 +19,23 @@ import PlaygroundSupport
  You can use the **Digital Color Meter** app (already installed on your Mac) to find specific colours as RGB (red-green-blue) codes.
  
  You [can use this site](http://www.workwithcolor.com/color-converter-01.htm) to convert colours to HSB to use with the Canvas class.
-*/
+ 
+ Or, if you wish, you may use the color constants created below.
+ */
 
-// Create a canvas object to use
-let canvas = Canvas(width: 400, height: 600)
+// Create a new canvas
+let canvas = Canvas(width: 442, height: 642, quality: .Ultra)
+
+// COLORS
+let yellow = Color(hue: 45, saturation: 99, brightness: 100, alpha: 100)
+let purple = Color(hue: 304, saturation: 40, brightness: 64, alpha: 100)
+let brown = Color(hue: 38, saturation: 99, brightness: 38, alpha: 100)
+let lightRed = Color(hue: 10, saturation: 80, brightness: 80, alpha: 75)
 
 // Begin your solution here...
 
 // REMINDER: here's how to create an n-sided polygon with a fill
-canvas.fillColor = Color(hue: 120, saturation: 80, brightness: 90, alpha: 100)
+canvas.fillColor = purple
 canvas.drawShapesWithBorders = false
 var vertices : [Point] = []
 vertices.append(Point(x: 50, y: 100))
