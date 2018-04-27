@@ -24,7 +24,7 @@ import PlaygroundSupport
  */
 
 // Create a new canvas
-let canvas = Canvas(width: 442, height: 642, quality: .Ultra)
+let canvas = Canvas(width: 400, height: 600)
 
 // COLORS
 let yellow = Color(hue: 45, saturation: 99, brightness: 100, alpha: 100)
